@@ -53,33 +53,33 @@
     padding: 5px 10px 5px 10px;
   }
 </style>
-<div class="container-fluid logInSignUpContent">
+<div class="container-fluid logInSignUpContent" ng-controller="logInSignUpPage">
   <div class="formlas row" ng-style="form">
     <div class="left col-md-6 col-12 my-5 text-center">
-      <form action="" class="form-control">
+      <form action="" class="form-control" ng-submit="LogIn()">
         <div class="row">
           <div class="col-6"><button class="in_1">LOG IN</button></div>
           <div class="col-6"><button class="up_1">SIGN UP</button></div>
         </div>
 
-        <input type="text" class="form-control" placeholder="E-mail" ng-model="email"/>
-        <input type="text" class="form-control" placeholder="Password" ng-model="pass"/>
+        <input type="text" class="form-control" placeholder="E-mail" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" ng-model="email" required/>
+        <input type="text" class="form-control" placeholder="Password" ng-model="pass" required/>
         <div class="submit">
-          <button type="submit" ng-click="LogIn">LOG IN</button>
+          <button type="submit" >LOG IN</button>
         </div>
       </form>
     </div>
     <div class="right col-md-6 col-12 my-5 text-center">
-      <form action="" class="form-control">
+      <form action="" class="form-control" ng-submit="SignUp()">
         <div class="row">
           <div class="col-6"><button class="in_2">LOG IN</button></div>
           <div class="col-6"><button class="up_2">SIGN UP</button></div>
         </div>
-        <input type="text" class="form-control" placeholder="Username" ng-model="username"/>
-        <input type="text" class="form-control" placeholder="E-mail" ng-model="emailSignUp"/>
-        <input type="text" class="form-control" placeholder="Password" ng-model="passSignUp"/>
+        <input type="text" class="form-control" placeholder="Username" pattern="[A-Za-z1-9]{2,10}[A-Za-z1-9 ]{2,10}" ng-model="username" required/>
+        <input type="text" class="form-control" placeholder="E-mail" pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$" ng-model="emailSignUp" required/>
+        <input type="password" class="form-control" placeholder="Password" ng-model="passSignUp" required pattern="[a-zA-Z0-9\S]{6,20}"/>
         <div class="submit">
-          <button type="submit" ng-click="SignUp">SIGN UP</button>
+          <button type="submit" >SIGN UP</button>
         </div>
       </form>
     </div>

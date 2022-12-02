@@ -147,29 +147,30 @@ app.controller("logInSignUpPage", function ($scope) {
   
   $scope.SignUp = function () {
     localStorage.setItem("emailSignUp", $scope.emailSignUp);
-  }
-  $scope.SignUp = function () {
     localStorage.setItem("username", $scope.username);
-  }
-  $scope.SignUp = function () {
     localStorage.setItem("passSignUp", $scope.passSignUp);
+    alert("Sign Up successfully!");
   }
 
   $scope.LogIn = function () {
     var checkEmail = localStorage.getItem("emailSignUp")
-    $scope.ngmodel == checkEmail
-    checkLogIn = true;
-    logInSuccessfully();
-
     var checkPass = localStorage.getItem("passSignUp")
-    $scope.ngmodel == checkPass
-    checkLogIn = true;
+
+    if($scope.email == checkEmail && $scope.pass == checkPass){
+      checkLogIn = true;
+      
+    }
     logInSuccessfully();
+    
   }
 
   function logInSuccessfully() {
     if (checkLogIn == true) {
+      alert("Log In successfully!");
       $scope.form = { display: "none" }
+    }
+    if(checkLogIn == false){
+      alert("ko thNH ONG!");
     }
   }
 });
