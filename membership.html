@@ -1,0 +1,195 @@
+<style>
+  .membershipContent {
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(
+      45deg,
+      rgb(253, 158, 255),
+      rgb(155, 237, 255)
+    );
+  }
+  div.right-infor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+  }
+  div.left-infor {
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+  }
+  div.member-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.isMember {
+    text-align: center;
+  }
+  div.notMember {
+    min-height: 200px;
+    text-align: center;
+    padding: 40px 40px 40px 40px;
+  }
+  #nmrfn {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  .btn-registry {
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px 10px 20px;
+    background-color: rgb(1, 204, 255);
+    font-size: larger;
+    font-family: "Times New Roman", Times, serif;
+
+    transition: 0.4s;
+  }
+  .btn-registry:hover {
+    border-radius: 30px;
+    padding: 15px 25px 15px 25px;
+    font-size: x-large;
+    transition: 0.4s;
+    border: none;
+    box-shadow: 0px 0px 20px rgb(221, 0, 103);
+  }
+  div.benefit {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .b-dntf {
+    display: flex;
+    justify-content: center;
+  }
+  .b-ntf {
+    padding: 20px;
+    width: fit-content;
+    background-image: linear-gradient(
+      45deg,
+      rgb(64, 64, 250),
+      rgb(39, 231, 174)
+    );
+    border-radius: 20px;
+  }
+
+  .b-left:hover,
+  .b-right:hover {
+    background-color: rgb(233, 72, 110);
+    transition: 1s;
+    background-image: none;
+  }
+  .b-inf {
+    display: flex;
+    justify-content: center;
+  }
+  .b-left {
+    max-width: 300px;
+    padding: 20px;
+    background-image: linear-gradient(
+      45deg,
+      rgb(230, 62, 227),
+      rgb(157, 26, 250)
+    );
+    border-radius: 15px;
+  }
+  .b-right {
+    max-width: 300px;
+    padding: 20px;
+
+    background-image: linear-gradient(
+      45deg,
+      rgb(13, 241, 93),
+      rgb(216, 244, 54)
+    );
+    border-radius: 15px;
+  }
+  .memmber-img {
+    min-width: 250px;
+    max-width: 700px;
+  }
+  .revealOfMembershipPage.benefit {
+    position: relative;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 1s ease;
+  }
+  .revealOfMembershipPage.benefit.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .revealOfMembershipPage.notMember {
+    position: relative;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 1s ease;
+  }
+  .revealOfMembershipPage.notMember.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<div class="container-fluid" ng-controller="membership">
+  <div class="membershipContent row">
+    <div class="left-infor col-12">
+      <div class="member-image" style="margin: 5vh 0 200px 0">
+        <img
+          src="image/member.jpg"
+          alt=""
+          class="memmber-img img-fluid rounded my-3"
+        />
+      </div>
+
+      <div class="cal-point">
+        <div class="benefit revealOfMembershipPage">
+          <div class="b-dntf mb-3">
+            <div class="b-ntf">
+              <h1 class="memberBenefit">Member benefits</h1>
+            </div>
+          </div>
+          <div class="b-inf row">
+            <div class="b-left col-12 col-xxl-5">
+              <h6>Receive points when make a purchase</h6>
+            </div>
+            <div class="and col-12 col-xxl-2 align-items-center pt-xxl-4">
+              <h4>AND</h4>
+            </div>
+            <div class="b-right col-12 col-xxl-5">
+              <h6>Exchange point into discount voucher</h6>
+            </div>
+          </div>
+          <div class="pep pt-5 pb-3">
+            <h3>You will get 20 points with each product bought!</h3>
+          </div>
+        </div>
+        <div class="cal" style="margin: 100px 0 150px 100px">
+          <h5>
+            Below are discount code that you can exhange point into (apply for
+            total bill)
+          </h5>
+          <ul>
+            <li>50 points = 5% coupon x 10</li>
+            <li>100 points = 10% coupon x 10</li>
+            <li>150 points = 15% coupon x 10</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="right-infor col-12 py-3">
+      <div
+        class="notMember revealOfMembershipPage"
+        style="margin: 200px 0 500px 0"
+      >
+        <p id="nmrfn">You are not a member? Registry for now!</p>
+        <a href="#!logInSignUp">
+          <input type="button" value="Registry" class="btn-registry" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

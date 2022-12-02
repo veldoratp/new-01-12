@@ -1,0 +1,115 @@
+<style>
+  .aboutUsContent {
+    min-height: 60vh;
+    background-image: linear-gradient(
+      45deg,
+      rgb(253, 158, 255),
+      rgb(155, 237, 255)
+    );
+    align-items: center;
+  }
+  .img-member:hover {
+    transition: 0.2s;
+    background-color: rgba(225, 225, 225, 0.6);
+    box-shadow: 0px 0px 40px rgb(244, 253, 2);
+  }
+  .about-rhythmHouse {
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 10vh 0 0 0;
+
+    min-height: 100vh;
+  }
+  .revealOfAboutUsPage.textMember {
+    position: relative;
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all 1s ease;
+  }
+  .revealOfAboutUsPage.textMember.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .revealOfAboutUsPage.left-member {
+    position: relative;
+    opacity: 0;
+    transform: translateX(-200px);
+    transition: all 2s ease;
+  }
+  .revealOfAboutUsPage.left-member.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .revealOfAboutUsPage.right-member {
+    position: relative;
+    opacity: 0;
+    transform: translateX(200px);
+    transition: all 2s ease;
+  }
+  .revealOfAboutUsPage.right-member.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+</style>
+<div class="container-fluid aboutUsContent" style="padding: 0 0 200px 0">
+  <div class="about-rhythmHouse text-center w-100">
+    <div class="row justify-content-center">
+      <div class="image col-12">
+        <img
+          src="image/logo.jpg"
+          alt="Logo"
+          class="img-fluid img-rounded pb-5"
+        />
+      </div>
+      <div class="col-12 col-md-8">
+        <h3 class="text-uppercase">Rhythm House</h3>
+        <p>
+          Rhythm House was famously loved by musicians across many genres of
+          music. From Classical music to Jazz, the music store had something on
+          offer for every music lover. Eminent Classical artists like Pandit
+          Ravi Shankar and maestro Zakir Hussain also frequented the store for
+          its Hindustani and Carnatic music collections.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-teamMember text-center">
+    <div class="textMember revealOfAboutUsPage" style="margin-bottom: 50px">
+      <h3 class="text-uppercase mt-5 py-3">Member</h3>
+    </div>
+    <div class="row text-center justify-content-center pb-5">
+      <div class="left-member revealOfAboutUsPage col-12 col-md-6 row pt-1">
+        <div class="image col-6 col-md-12">
+          <img
+            src="image/IMG_E2613.JPG"
+            alt="Duy An"
+            class="img-fluid img-member"
+            width="517"
+          />
+        </div>
+        <div class="Describe col-6 col-md-12">
+          <div class="text-start text-md-center pt-3">
+            <h1>Leader</h1>
+            <h3>Nguyen Trinh Duy An</h3>
+          </div>
+        </div>
+      </div>
+      <div class="right-member revealOfAboutUsPage col-12 col-md-6 row pt-1">
+        <div class="image col-6 col-md-12">
+          <img
+            src="image/khuong.png"
+            alt="Duy Khuong"
+            class="img-fluid img-member"
+          />
+        </div>
+        <div class="Describe col-6 col-md-12">
+          <div class="text-start text-md-center pt-3 pt-md-1">
+            <h1>Member</h1>
+            <h3>Pham Duy Khuong</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

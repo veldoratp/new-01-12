@@ -1,0 +1,262 @@
+{
+  "product": [
+    {
+      "image": "image/lalaland.jpg",
+      "name": " La La Land ",
+      "product-type": "Product",
+      "type": "CD",
+      "category": "movie",
+      "year": "2016",
+      "describe": "Referring to movies about music, it is impossible to ignore the classic name La La Land. The work makes viewers constantly sobbing, regretting the love story between the two characters, romantic and sweet but then lost each other by dreams. Mia – she always aspires to become a famous actress, Sebastian – a lover of Jazz music, two people who share a strong passion for art collided with each other, becoming the support for each other. But then what comes has also come, when we don't care enough, understand, cracks just appear and make the other half's heart hurt. Even after this, both of them have everything, but they can't. Seeing each other, the audience still believes that this is the perfect ending for a blockbuster about Hollywood's hit musicals.",
+      "price": 100.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/dreamhigh.jpg",
+      "name": "Dream High",
+      "product-type": "Product",
+      "type": "Tape",
+      "category": "movie",
+      "year": "2011",
+      "describe": "Dream High - a movie that caused a stir in Asia in 2011 with the theme of music, revolves around the journey to reach the dreams of students at Kirin Art School. The super product gathers a cult star cast, which is appreciated by the audience that even if you have money now, you can't invite it back: IU, Bae Suzy, Kim Soo Hyun, Ok Taecyeon, etc. produced by KBS. Following the achievements of part 1, part 2 was quickly released but did not receive high appreciation from the audience because the plot was bland, and could no longer retain the same charm and enthusiasm as before.",
+      "price": 170.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/soul.jpg",
+      "name": "Soul ",
+      "product-type": "Product",
+      "type": "Tape",
+      "category": "movie",
+      "year": "2020",
+      "describe": "Soul - a film about jazz music received a lot of positive feedback from the audience because of its humane and meaningful plot. The work revolves around the character Joe Gardner - a teacher who always thought he was born to devote himself to Jazz music but now harshly entrenched him in high school. Not giving up, Joe Gardner succeeded in the session. audition with idols. But before officially creating the concert of his life, Joe Gardner suddenly had an accident. Unwilling to face such an unjust departure, Joe Gardner struggled in the land of The Great Before and found a chance to return home.",
+      "price": 160.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/theBeatle.jpg",
+      "name": "The Beatles ",
+      "product-type": "Product",
+      "type": "DVD",
+      "category": "band",
+      "year": "1960",
+      "describe": "Pop music is popular music and easily attracts audiences thanks to its popularity and easy listening. To talk about the dance bands that have succeeded with pop music, it is impossible not to mention the number one position belongs to The Beatles.The boy band with legendary names like Paul McCartney, George Harrison, Ringo Starr, John Lennon, Stu Sutcliffe, Pete Best, who created a lot of pop-rock songs that attracted thousands of people in concerts as well. as sales of more than 600 million records have ever been sold in the market.",
+      "price": 170.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/theSupreme.jpg",
+      "name": "The Supremes",
+      "product-type": "Product",
+      "type": "CD",
+      "category": "band",
+      "year": "1960",
+      "describe": "The group of female members has come together to deliver many groundbreaking songs. Their hits still leave an impression on the audience because of the classics of the pop genre combined with pristine R&B/soul such as You Can't Hurry Love, Baby Love and Stop, In the Name of Love. Anyone who has ever heard the music of The Supremes must refrain from dancing to the music they create.",
+      "price": 180.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/theBeachBoy.jpg",
+      "name": "The Beach Boys  ",
+      "product-type": "Product",
+      "type": "Tape",
+      "category": "band",
+      "year": "1961",
+      "describe": "The group formed in 1961 has bold images of dreams from the American suburbs. The most prominent member and also the leader of the group is Brian Wilson. The music of The Beach Boys is considered balanced, showing the ingenuity of combining popular tunes with more daring choruses that can be heard every day. The group also entered the US charts many times.",
+      "price": 200.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/24hours.jpg",
+      "name": "'24 hours' - Sunmi  ",
+      "product-type": "Product",
+      "type": "DVD",
+      "category": "solo performance",
+      "year": "2009",
+      "describe": "Away from the Kpop stage for a long time to focus on his academic career, the former member of Wonder Girls had a really impressive comeback with 24 hours.With a rhythmic, seductive dance and tango melody and Sunmi's powerful voice, 24 hours makes the audience have to replay continuously if they miss it once. The proof is that after being released, this song has swept all major online music charts in Korea, such as Melon, Mnet, Daum, Naver, etc.It has been more than 3 years since leaving Wonder Girls, this comeback Sunmi not only 'makeovers' with a sexy and sexy concept but also impresses Kpop fans with her obvious maturity in her voice.Debuting as a solo singer means that Sunmi will have to start over from the starting line. There is still a long way to go for Sunmi's efforts, but with remarkable success thanks to 24 hours, hopefully Sunmi will continue to try and produce quality music products in the near future.",
+      "price": 180.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/coup.jpg",
+      "name": "'Coup d’etat' - G-Dragon   ",
+      "product-type": "Product",
+      "type": "CD",
+      "category": "solo performance",
+      "year": "2013",
+      "describe": "2013 can be considered as the year of the big victory of the YG family and also the year of the big award for the leader of Big Bang.At the recent MAMA award ceremony, GD won four important awards: Artist of the year, Best Male Artist, and Best solo dance performance. (Best Dance Performance-Male solo), Best MV (Nissan Juke Best Music Video).Working solo since 2009 and continuously producing excellent products, in 2013, GD continued to release the album Coup d'etat. Before being released, this album proved its huge attraction when bringing YG 300,000 orders in Korea alone.Included in this album are 14 songs with 4 title songs: Who you, Black, Crooked and Niliria. MV Crooked alone reached 4 million views within 10 days. Immediately after being released, the songs on the album also continuously remained in the top 10 most listened songs on online music charts. Coup d'etat also helped G-Dragon become the highest-ranking Asian Artist on the iTunes Global Artist Chart.",
+      "price": 200.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/dacnhantam.jpg",
+      "name": " Dac Nhan Tam ",
+      "product-type": "Product",
+      "type": "Book",
+      "category": "movie",
+      "year": "2016",
+      "describe": "Dac Nhan Tam is the most famous, best-selling, and most influential book of all time. This book is continuously topping the best-selling book list (voted by The New York Times for 10 years in a row. The work is considered the first and best book, having a life-changing influence. of millions of people around the world.Dac Nhan Tam is the art of winning people's hearts, is to make everyone love you.Achieving human heart and talent in each of us.Dac Nhan Tam in that sense needs to be achieved. Acquired by self-understanding, being honest with yourself, understanding and caring for those around you to see and unleash their hidden potentials, helping them to grow to new heights. It is the highest art about people and the deepest meaning drawn from Dale Carnegie's golden principles. Since 'Winning the heart' to readers, it has made readers realize that they have can moderate the relationships inside and outside of work, and in fact, the two relationships are never separate. Best quote in the book It is this: “It is a fact that everyone you meet feels they are better than you in some way, and the straight way to their hearts is for them to realize that you recognize your importance. theirs, and that credit is sincere.”",
+      "price": 100.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/cachnghidethanhcong.jpg",
+      "name": " Cach Nghi De Thanh Cong ",
+      "product-type": "Product",
+      "type": "Book",
+      "category": "movie",
+      "year": "2016",
+      "describe": "How to Think for Success is the first book to lay out the philosophy of success - a complete and comprehensive philosophy of personal success, and give you the method to create a rough and detailed plan. To achieve that success.Written from countless true stories of great people like Edison - a brilliant inventor whose training time in school was only... only 3 months, like Henry Ford - who is considered uneducated but has become a tycoon in the car industry with a huge fortune..., the work has a great persuasion and movement,. Napoleon Hill has spent almost all of his time and energy over the course of nearly thirty years interviewing over 500 of the most famous and successful people in various fields, along with thousands of other entrepreneurs - even the most unsuccessful. and successful people. With more than 60 million copies sold in the 70 years since its inception, the conclusions of Napoleon Hill's success have never been outdated, on the contrary, time is the proof. alive for the correctness of the secrets he shares. The best quote from this book is: “The breakthroughs you need in life are in your imagination. Imagination is the factory in your head that can turn the energy of thought into achievement and wealth.””",
+      "price": 100.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/elle.jpg",
+      "name": " Elle ",
+      "product-type": "Product",
+      "type": "Magazine",
+      "category": "movie",
+      "year": "1945",
+      "describe": "Elle is a magazine of French origin, focusing on fashion, beauty, health and entertainment. It was founded by Pierre Lazareff and his wife Helene Gordon in 1945. Currently, it is one of the best-selling fashion magazines in the world.””",
+      "price": 100.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/glamour.jpg",
+      "name": " Glamour ",
+      "product-type": "Product",
+      "type": "Magazine",
+      "category": "movie",
+      "year": "1939",
+      "describe": "Glamor is a women's magazine first published by Conde Nast Publications in April 1939 in the United States. Local editions are now published in many countries including UK, France, Italy, Germany, Spain, Russia, Greece, Poland, South Africa, Brazil, Hungary, Romania, Bulgaria, Netherlands Lan and Mexico.””",
+      "price": 100.0,
+      "quantity": 1
+    }
+    
+  ],
+  "liveshow": [
+    {
+      "image": "image/e-product/maylangthang.jpg",
+      "name": "May Lang Thang",
+      "product-type": "Liveshow",
+      "type": "",
+      "category": "band",
+      "year": "2023",
+      "describe": "For a long time, the city of Da Lat has become a symbol of romance and dream, and the Wandering Clouds is no exception to this rule. May Lang Thang is a combination of homestays, cafes, restaurants and even pubs. But most young people who love music, or love Da Lat, know about May Lang Thang through 'music nights in the clouds'. A feature of these concerts is that they are held at 16:30 - a beautiful time. The most beautiful day of the day with 'clouds hanging overhead and sunshine overhead' surrounded by mountains and hills, with golden sunshine and pink clouds. The 'in the clouds' stage since its inception has gathered the hottest names in the village. Vietnamese music such as Phan Manh Quynh, Trung Quan, Nguyen Ha, Vu Cat Tuong, Thuy Chi, Ha Nhi, Vu, ... The space is bold in the mountains and hills of Da Lat with a panoramic view of the city and the entrance road. the winding, precarious part, but that's also why 'Music Night in the Clouds' brings unique experiences to the audience. When the coolness of Da Lat's atmosphere mixes with lively melodies and live-band will be make you have a relaxing and peaceful experience when coming to this place."
+    },
+
+    {
+      "image": "image/e-product/souloftheforest.jpg",
+      "name": "Flamingo Dai Lai",
+      "product-type": "Liveshow",
+      "type": "",
+      "category": "solo performance",
+      "year": "2023",
+      "describe": "True to its poetic name, Soul of the Forest is held in the middle of a pine forest, within the campus of Flamingo Dai Lai Resort - Top 10 most beautiful resorts in the world in Vinh Phuc, about 45 minutes away from Hanoi. With the main concept Inspired by the romantic and mystical pine forest, Soul of the Forest focuses on the audience's connection with the singer and with the music. Under the pine trees, the stage is designed in a rustic style, along with an arc-shaped seating area to create a feeling of warmth and closeness. The guests of the night are famous names such as Ha Tran, Le Quyen, Uyen Linh, Bang Kieu, Le Hieu, Lan Nha, Bui Lan Huong,... Soul of the Forest have been telling audiences stories of music that move their souls. Not only being immersed in the tunes in a relaxing space, the audience will also enjoy the impressive works of art in the collection of the Flamingo Museum of Contemporary Art. The combination of nature - music - art at Soul of the Forest will definitely be an unforgettable experience."
+    }
+  ],
+  "contest": [
+    {
+      "image": "image/e-product/americanidol.jpg",
+      "name": "American Idol",
+      "product-type": "Contest",
+      "type": "",
+      "category": "solo performance",
+      "year": "2022",
+      "describe": "American Idol is an American music competition and reality television show. The contest began to be held on June 11, 2002 and is one of the most popular television programs in the United States. American Idol is licensed from the British show Pop Idol, founded by producer Simon Fuller. American Idol was founded with the purpose of finding the most promising singers in the United States through a series of auditions held around the country. After that, the finalists will be decided by the audience's vote by phone. One feature of the program is that after the contestants' performances, the judges will give their own comments to help the audience orient the contestant they voted for. American Idol contestants must be able to sing and not currently have any recording contract or be under the management of a music organization. They must be US citizens or foreigners working in the US for a long time.For the first three years, American Idol contestants had to be between the ages of 16 and 24. But from the fourth year, the competition raised the age limit to 28 to attract more experienced contestants. . American Idol begins with tens of thousands of contestants, who will be interviewed and eliminated before auditioning with the show's two producers, Ken Warwick and Nigel Lithgoe. After that, they will be able to attend the official audition round with the three main judges of the show. In Hollywood, contestants selected through auditions around the United States will continue to test for several days, and many contestants will be eliminated by the judges. In the semi-finals, the selected contestants will be divided into groups. Each panel consists of multiple singers and all contestants in the same group will perform on the same night. From this round, the judges only have the role of commenting on the contestants, and the decision is entirely up to the audience's votes by telegram. The top two or three contestants from each group will be selected for the final round. The final round of American Idol competition took place for 11 consecutive weeks. During each week, the contestants will have to choose songs to perform according to the theme. The themes here can be different genres of music. In general, American Idol is the starting point for many young singers to achieve success in their later careers."
+    },
+
+    {
+      "image": "image/e-product/baihathaynhat.jpg",
+      "name": "Best song",
+      "product-type": "Contest",
+      "type": "",
+      "category": "solo performance",
+      "year": "2023",
+      "describe": "Sing My Song is a reality TV show that searches for versatile artists who can compose and sing well. The program is organized with the aim of finding, fostering and developing generations of multi-talented musicians and singers (artists). The contestants selected for the recording round will be supported by the Organizing Committee in ability training, product release, image building and media sponsorship. The program has been distributed to more than 30 countries around the world and in Asia, first being broadcast in China with an overwhelmingly high rating and overwhelming compared to The Voice of China. In 2016, the program was copyrighted by Cat Tien Sa Company with the name Best Song and broadcast in Vietnam on channel VTV3. In the pre-qualification round, the candidates will send their documents and songs to register for the contest online and the organizers will select the best songs to enter the Recording round.In this round of recording, the contestants will perform their songs, while the coaches are not allowed to directly see the contestants' performances, but are blocked by a large screen that plays the lyrics. If the coach feels satisfied with the melody and content of the song, they will push the red lever in front of their face to receive the recording of the song being performed, and immediately the screen in front of the coach will go down. At the end, all screens are lowered for the judges to interact with the contestants. In the event that two or more judges choose the same candidate, the judges will have to compete for the contestant, but of course the final decision is in the hands of the contestant. The format of this exam is similar to the Hidden Face round of the Vietnamese vocal program. At the end of this round, 32 performances will be selected by four teams of four coaches, 8 contestants each. Composing and competing rounds each coach will come up with a theme for their album. Eight contestants of each team were divided into four pairs by lottery, each pair of two contestants composing the same theme of the album and sharing a separate room within 24 hours. At the end of 24 hours, all eight contestants will in turn perform a demo for the coach and mentor. Each team will have a guest with the role of an advisor who will work with the coach to help the contestants complete their song. The coach will choose a representative from each pair to be sure to advance to the Competition round to perform the newly composed song in front of other coaches and the panel of experts. Of the remaining four contestants, the special advisor will select one more contestant to advance to the Competition round. At the end of the Composing round, each team has five contestants to advance and three contestants to be eliminated. The contestant who gets 16 votes first will become the first season's Best Song Champion."
+    }
+  ],
+  "album": [
+    {
+      "image": "image/e-product/okComputer.png",
+      "name": "OK Computer",
+      "category": "movie",
+      "type": "Album",
+      "year": 1997,
+      "describe": "OK Computer is the third studio album by the English rock band Radiohead, released in Japan on 21 May 1997 and in the UK on 16 June 1997. Radiohead self-produced the album with Nigel Godrich, an arrangement they have used for their subsequent albums. Radiohead recorded most of OK Computer in their rehearsal space in Oxfordshire and the historic mansion of St Catherine's Court in Bath in 1996 and early 1997. The band distanced themselves from the guitar-centred, lyrically introspective style of their previous album, The Bends. OK Computer's abstract lyrics, densely layered sound and eclectic influences laid the groundwork for Radiohead's later, more experimental work.",
+      "price": 100.0,
+      "quantity": 1
+    },
+    {
+      "image": "image/e-product/wishU.png",
+      "name": "Wish You Were Here",
+      "category": "movie",
+      "type": "Album",
+      "year": 1975,
+      "describe": "Wish You Were Here is the ninth studio album by the English rock band Pink Floyd, released on 12 September 1975 through Harvest Records and Columbia Records. Based on material Pink Floyd composed while performing in Europe, Wish You Were Here was recorded over numerous sessions throughout 1975 at EMI Studios (now Abbey Road Studios) in London.The themes include alienation and criticism of the music business. The bulk of the album is taken up by 'Shine On You Crazy Diamond', a nine-part tribute to founding member Syd Barrett, who was sacked seven years earlier due to his deteriorating mental health. Barrett coincidentally visited during the album's production in 1975.",
+      "price": 200.0,
+      "quantity": 1
+    }
+  ],
+  "category": [
+    {
+      "image": "image/e-product/coco.jpg",
+      "name": "Coco ",
+      "product-type": "Product",
+      "type": "DVD",
+      "category": "movie",
+      "year": "2017",
+      "describe": "Coco made a strong impression on the audience with the story of the burning, intense and emotional love of music that even adults watching the movie had to cry. The movie project of the animation studio Pixar is truly a party of emotions when it brings to the audience perfect footage, reaching the pinnacle of art. The content of the animated film revolves around Miguel. – the boy always has an undying love for music, but his family always opposes and wants him to follow in the family career to become a traditional shoemaker. In an argument with Mrs. Elena, he got involved. Join a festival for the dead and trapped in a mysterious land. Here, Miguel went with his dog Dante to find the soul of Ernesto - the musical idol in his heart for a long time.",
+      "price": 120.0,
+      "quantity": 1
+    },
+    {
+      "image": "image/e-product/astartisborn.jpg",
+      "name": "A Star is Born",
+      "product-type": "Product",
+      "type": "CD",
+      "category": "band",
+      "year": "2018",
+      "describe": "A Star is Born immerses viewers in the burning love of the two main characters along with the melodies of the music. Country singer Jack 'Jackson' Maine (Bradley Cooper) and amateur female musician Ally (Lady Gaga) are so attracted to each other, they spend their sweet, romantic days together. Every gesture and action contains emotions that are difficult to put into words. But every song must end, their love story also gradually touches tragedy. Having 'burned' together with music, in harmony in their souls and emotions, the two characters could not be together, the ending of the work makes viewers haunted because it is too sad.",
+      "price": 150.0,
+      "quantity": 1
+    }
+  ],
+  "soldMonthly": [
+    {
+      "image": "image/e-product/coco.jpg",
+      "name": "Coco ",
+      "product-type": "Product",
+      "type": "DVD",
+      "category": "movie",
+      "year": "2017",
+      "describe": "Coco made a strong impression on the audience with the story of the burning, intense and emotional love of music that even adults watching the movie had to cry. The movie project of the animation studio Pixar is truly a party of emotions when it brings to the audience perfect footage, reaching the pinnacle of art. The content of the animated film revolves around Miguel. – the boy always has an undying love for music, but his family always opposes and wants him to follow in the family career to become a traditional shoemaker. In an argument with Mrs. Elena, he got involved. Join a festival for the dead and trapped in a mysterious land. Here, Miguel went with his dog Dante to find the soul of Ernesto - the musical idol in his heart for a long time.",
+      "price": 120.0,
+      "soldPerMonth": "123",
+      "quantity": 1
+    },
+    {
+      "image": "image/e-product/soul.jpg",
+      "name": "Soul ",
+      "product-type": "Product",
+      "type": "Tape",
+      "category": "movie",
+      "year": "2020",
+      "describe": "Soul - a film about jazz music received a lot of positive feedback from the audience because of its humane and meaningful plot. The work revolves around the character Joe Gardner - a teacher who always thought he was born to devote himself to Jazz music but now harshly entrenched him in high school. Not giving up, Joe Gardner succeeded in the session. audition with idols. But before officially creating the concert of his life, Joe Gardner suddenly had an accident. Unwilling to face such an unjust departure, Joe Gardner struggled in the land of The Great Before and found a chance to return home.",
+      "price": 160.0,
+      "soldPerMonth": "45",
+      "quantity": 1
+    }
+  ]
+}

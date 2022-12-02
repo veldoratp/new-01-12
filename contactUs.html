@@ -1,0 +1,186 @@
+<style>
+  input {
+    margin: 5px 0 5px 0;
+  }
+  .contactUsContent {
+    background-image: linear-gradient(
+      45deg,
+      rgb(253, 158, 255),
+      rgb(155, 237, 255)
+    );
+  }
+  .eachContact {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0 0;
+  }
+  .content1 {
+    padding: 100px 0 100px 0;
+  }
+  .threeContact {
+    justify-content: center;
+    margin: 20px 0 150px 0;
+    min-height: 200px;
+    border-bottom: solid 2px white;
+    border-top: solid 2px white;
+  }
+  .map {
+    min-height: 400px;
+  }
+  .revealOfContactUsPage.mapAndForm {
+    position: relative;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: all 1s ease-in;
+    margin: 0 0 300px 0;
+    min-height: 450px;
+  }
+  .revealOfContactUsPage.mapAndForm.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  iframe {
+    border-radius: 10px;
+  }
+</style>
+
+<div class="contactUsContent container-fluid">
+  <div class="content1 row text-center">
+    <h1>Contact Us</h1>
+    <div class="row threeContact">
+      <div class="eachContact text-center py-5 col-md-4 row">
+        <div class="contact-info">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-phone-check"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+            ></path>
+            <path d="M15 6l2 2l4 -4"></path>
+          </svg>
+          (+84) 999797979
+        </div>
+      </div>
+      <div class="eachContact text-center py-5 col-md-4 row">
+        <div class="contact-info">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-flag"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="5" y1="5" x2="5" y2="21"></line>
+            <line x1="19" y1="5" x2="19" y2="14"></line>
+            <path d="M5 5a5 5 0 0 1 7 0a5 5 0 0 0 7 0"></path>
+            <path d="M5 14a5 5 0 0 1 7 0a5 5 0 0 0 7 0"></path></svg
+          >590 AR, District 3, HCMCT
+        </div>
+      </div>
+      <div class="eachContact text-center py-5 col-md-4 row">
+        <div class="contact-info">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-gmail"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z"></path>
+            <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z"></path>
+            <path d="M16 4l-4 4l-4 -4"></path>
+            <path d="M4 6.5l8 7.5l8 -7.5"></path></svg
+          >Rhythm@gmail.com
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content2 row py-5">
+    <div class="revealOfContactUsPage mapAndForm row">
+      <div class="map col-md-6 col-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3192813976666!2d106.66369937422283!3d10.786840059003271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed2392c44df%3A0xd2ecb62e0d050fe9!2zRlBUIEFwdGVjaCBIQ00gLSBI4buHIFRo4buRbmcgxJDDoG8gVOG6oW8gTOG6rXAgVHLDrG5oIFZpw6puIFF14buRYyBU4bq_IChTaW5jZSAxOTk5KQ!5e0!3m2!1svi!2s!4v1669299607211!5m2!1svi!2s"
+          class="img-fluid"
+          style="border: 0; width: 100%; height: 100%"
+          allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+
+      <div class="form col-md-6 col-12 text-md-start text-center mt-md-0 mt-3">
+        <form action="" class="form" ng-submit="">
+          <legend>GET IN TOUCH</legend>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name here"
+            required
+            pattern="[A-Za-z]+"
+            class="form-control"
+          />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Your email here"
+            required
+            pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
+            class="form-control"
+          />
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Subject here"
+            required
+            class="form-control"
+          />
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Your phone here"
+            required
+            pattern="\d{7,11}"
+            class="form-control"
+          />
+          <input
+            type="text"
+            name="mes"
+            id="mes"
+            placeholder="Message"
+            required
+            class="form-control"
+          />
+          <button type="submit" class="btn btn-danger mt-2">
+            SUBMIT MESSAGE
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

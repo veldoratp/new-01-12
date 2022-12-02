@@ -1,0 +1,378 @@
+<style>
+  .container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .row {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .each-product {
+    background-color: rgb(207, 207, 207, 0.3);
+    width: fit-content;
+    padding: 0 0 10px 0;
+  }
+  .each-product:hover {
+    background-color: rgb(207, 207, 207, 0.6);
+    box-shadow: 5px 5px 10px rgb(87, 87, 87);
+    transition: 0.1s;
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+  
+  .searchs {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .search_1 {
+    padding: 1px;
+  }
+
+  .card-category {
+    box-shadow: 0px 2px 2px 1px  grey;
+    align-items: center;
+  }
+
+  .card-types {
+    box-shadow: 0px 2px 2px 1px grey;
+  }
+
+  .card-year {
+    box-shadow: 0px 2px 2px 1px grey;
+  }
+  h2,
+  h3,
+  h5,
+  p {
+    font-size: large;
+  }
+  h5 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  h3 {
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  h4.pi {
+    margin: 5px 0 10px 30px;
+    color: rgb(44, 6, 81);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .Btn-close {
+    font-size: 2.3vw;
+    width: fit-content;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    background-color: red;
+    font-size: 1.2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .Modal {
+    display: none;
+    position: fixed;
+    top: -50px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* z-index: 1;  Sit on top */
+    /*left: 10vw;
+    top: 2vh; 
+    width: 80vw;  Full width
+    min-height: 460px;
+    max-height: 700px;*/
+    /*overflow: auto;  Enable scroll if needed */
+
+    animation: fadeIn linear 0.1s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0.2;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes growth {
+    from {
+      transform: scale(var(--grow-from));
+    }
+    to {
+      transform: scale(--grow-to);
+    }
+  }
+  .Modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .Modal-content {
+    width: 80%;
+    top: 100px;
+    left: 10vw;
+    bottom: 80px;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    --grow-from: 0.7;
+    --grow-to: 1;
+    animation: growth linear 0.1s;
+    padding-bottom: 10px;
+    overflow: auto;
+  }
+  .content {
+    background-image: linear-gradient(
+      45deg,
+      rgb(253, 158, 255),
+      rgb(155, 237, 255)
+    );
+  }
+  .Btn-addToCart {
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(255, 62, 62);
+    padding: 10px 15px 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 450;
+    margin: 0 0 20px 0;
+  }
+  .Btn-addToCart:hover {
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+    font-weight: 500;
+  }
+</style>
+
+<div class="container-fluid" ng-controller="product">
+  <div class="content row">
+    <div class="left-content col-sm-9 col-7 row">
+      <div
+        class="image_1 col-md-4 col-sm-6 col-12 my-3"
+        ng-repeat="eachProduct in listOfProduct | filter:{category: radioCategory} | filter:{type: radioTypes} | filter:{yearStatus: radioYear} | filter:{name: search} "
+      >
+        <div class="each-product text-center">
+          <img
+            ng-src="{{eachProduct.image}}"
+            alt=""
+            class="card-img-top img-fluid"
+            data-bs-toggle="Modal"
+            data-bs-target="#myModal"
+            ng-click="showModal($index)"
+          />
+          <h3>{{eachProduct.name}}</h3>
+          <h5>{{eachProduct.category}} - {{eachProduct.type}}</h5>
+          <p>${{eachProduct.price}}</p>
+          <input
+            type="button"
+            value="Add to Cart"
+            ng-click="addProductToCart($index)"
+            class="Btn-addToCart"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="right-content col-sm-3 col-5 mb-3">
+      <div class="col-12">
+        <div class="row px-2 pt-2 text-center justify-items-center">
+          <div class="search_1 col-12">
+            <input
+              type="text"
+              placeholder="search"
+              ng-model="search"
+              class="form-control"
+            />
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="card-category text-start px-4 py-3">
+          <h2>CATEGORY</h2>
+          <input
+            type="radio"
+            name="radioCategory"
+            id=""
+            ng-model="radioCategory"
+            ng-value="''"
+            ng-checked="true"
+          />All <br />
+          <input
+            type="radio"
+            name="radioCategory"
+            id=""
+            ng-model="radioCategory"
+            ng-value="'movie'"
+          />Movies<br />
+          <input
+            type="radio"
+            name="radioCategory"
+            id=""
+            ng-model="radioCategory"
+            ng-value="'band'"
+          />Band <br />
+          <input
+            type="radio"
+            name="radioCategory"
+            id=""
+            ng-model="radioCategory"
+            ng-value="'solo performance'"
+          />Solo performance<br />
+          <br>
+          <br>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="card-types text-start px-4 py-3">
+          <h2>TYPES</h2>
+          <input
+            type="radio"
+            name="radioTypes"
+            id=""
+            ng-model="radioTypes"
+            ng-value="''"
+          />All <br />
+          <input
+            type="radio"
+            name="radioTypes"
+            id=""
+            ng-model="radioTypes"
+            ng-value="'CD'"
+          />CD <br /><input
+            type="radio"
+            name="radioTypes"
+            id=""
+            ng-model="radioTypes"
+            ng-value="'DVD'"
+          />DVD <br />
+
+          <input
+            type="radio"
+            name="radioTypes"
+            id=""
+            ng-model="radioTypes"
+            ng-value="'Tape'"
+          />Tape <br />
+          <input
+            type="radio"
+            name="radioTypes"
+            id=""
+            ng-model="radioTypes"
+            ng-value="'Book'"
+          />Book <br />
+          <input
+            type="radio"
+            name="radioTypes"
+            id=""
+            ng-model="radioTypes"
+            ng-value="'Magazine'"
+          />Magazine <br />
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="card-year text-start px-4 py-3">
+          <h2>YEAR</h2>
+          <input
+            type="radio"
+            name="radioYear"
+            id=""
+            ng-model="radioYear"
+            ng-value="''"
+          />All <br />
+          <input
+            type="radio"
+            name="radioYear"
+            id=""
+            ng-model="radioYear"
+            ng-value="'before2000'"
+          />Before 2000 <br />
+          <input
+            type="radio"
+            name="radioYear"
+            id=""
+            ng-model="radioYear"
+            ng-value="'2000To2010'"
+          />2000-2010 <br />
+          <input
+            type="radio"
+            name="radioYear"
+            id=""
+            ng-model="radioYear"
+            ng-value="'after2010'"
+          />After 2010
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- manual Modal -->
+  <div class="Modal mt-md-5" ng-style="manualModal">
+    <div class="Modal__overlay"></div>
+    <div class="Modal-content">
+      <!-- Modal Header -->
+      <div class="Modal-header d-flex">
+        <h4 class="d-flex pi align-items-start">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-info-square mt-md-1 mr-3"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="1.25"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+            <polyline points="11 12 12 12 12 16 13 16"></polyline></svg
+          >Product Information
+        </h4>
+        <button
+          type="button"
+          class="Btn-close d-flex ms-auto mx-2 my-2 align-items-center"
+          ng-click="closeModal()"
+        >
+          Close
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="Modal-body row text-start">
+        <div class="img col-md-4 col-12 mx-md-3 mx-sm-0">
+          <img
+            ng-src="{{productModal[0].image}}"
+            alt=""
+            width="1920px"
+            class="img-fluid"
+          />
+        </div>
+        <div class="describe col-md-7 col-12 px-0 px-3">
+          <p style="font-size: 1.8vw">
+            {{productModal[0].name}} <br />
+            <b>
+              {{productModal[0].category}} | {{productModal[0].type}} |
+              {{productModal[0].year}} <br />
+            </b>
+            {{productModal[0].describe}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,180 @@
+<style>
+  td.PQTR {
+    vertical-align: middle;
+  }
+  .cartContent {
+    background-image: linear-gradient(
+      45deg,
+      rgb(253, 158, 255),
+      rgb(155, 237, 255)
+    );
+  }
+</style>
+
+<div class="container-fluid cartContent" ng-controller="cart">
+  <h1 class="mx-5 pt-5">Shopping Cart</h1>
+  <div class="listCart text-center py-2">
+    <table class="table">
+      <thead>
+        <tr>
+          <td>PRODUCT</td>
+          <td>PRICE</td>
+          <td>QUANTITY</td>
+          <td>TOTAL</td>
+          <td>REMOVE</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="eachProduct in listOfCart">
+          <td>
+            <div class="product row">
+              <div
+                class="productImage align-items-center col-sm-4 col-12 text-center"
+              >
+                <img
+                  ng-src="{{eachProduct.image}}"
+                  alt=""
+                  class="img-fluid"
+                  width="100px"
+                />
+              </div>
+              <div
+                class="productTitle col-sm-4 col-12 text-sm-start text-center"
+              >
+                <p>
+                  {{eachProduct.name}} <br />{{eachProduct.category}}
+                  <br />{{eachProduct.type}} <br />{{eachProduct.year}}
+                </p>
+              </div>
+            </div>
+          </td>
+          <td class="PQTR"><p>{{eachProduct.price}}</p></td>
+          <td class="PQTR">
+            <div class="btn-group">
+              <button class="btn" ng-click="minusQuantity($index)">-</button>
+              <button class="btn text-center" style="width: 40px">
+                {{eachProduct.quantity}}
+              </button>
+              <button class="btn" ng-click="plusQuantity($index)">+</button>
+            </div>
+          </td>
+          <td class="PQTR">{{eachProduct.price*eachProduct.quantity}}</td>
+          <td class="PQTR">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-trash"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              stroke-width="1.25"
+              stroke="currentColor"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              ng-click="delete(eachProduct.name)"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <line x1="4" y1="7" x2="20" y2="7"></line>
+              <line x1="10" y1="11" x2="10" y2="17"></line>
+              <line x1="14" y1="11" x2="14" y2="17"></line>
+              <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12"></path>
+              <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3"></path>
+            </svg>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="orderFormInfor row">
+    <div class="formInfor col-md-6" style="margin: 10px 0 20px 0">
+      <form action="" class="form" id="formInfor">
+        <h2 for="" class="">Your Information</h2>
+        <input
+          class="form-control p-2 my-2 mx-auto"
+          type="text"
+          pattern="[A-Za-z]+"
+          required
+          placeholder="Enter Your Name"
+        />
+        <input
+          class="form-control p-2 my-2 mx-auto"
+          type="email"
+          placeholder="Enter Your Email"
+          required
+          pattern="^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
+        />
+        <input
+          class="form-control p-2 my-2 mx-auto"
+          type="text"
+          placeholder="Enter Your Phone Number"
+          required
+          pattern="\d{7,11}"
+        />
+        <input
+          class="form-control p-2 my-2 mx-auto"
+          type="text"
+          placeholder="Enter Your Address"
+          required
+        />
+      </form>
+    </div>
+
+    <div class="orderInfor col-md-6 pb-3" style="margin: 10px 0 0 0">
+      <h2>Order Information</h2>
+      <div class="tableOrder">
+        <div class="row" ng-repeat="eachProduct in listOfCart">
+          <div class="col-8">
+            <p class="orderName">
+              {{eachProduct.name}} x {{eachProduct.quantity}}
+            </p>
+          </div>
+          <div class="col-4 text-center">
+            <p>{{eachProduct.price*eachProduct.quantity}}</p>
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-8">
+            <p class="cartTotal">Cart Total</p>
+          </div>
+          <div class="col-4 text-center">
+            <p>{{cartTotal}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <p class="vat">VAT</p>
+          </div>
+          <div class="col-4 text-center">
+            <p>{{vat}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <p class="shipFee">Ship Fee</p>
+          </div>
+          <div class="col-4 text-center">
+            <p>{{shipFee}}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <p class="orderTotal">Order Total</p>
+          </div>
+          <div class="col-4 text-center">
+            <p>{{vat+shipFee+cartTotal}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="buttonOrder text-center">
+        <input
+          type="submit"
+          form="formInfor"
+          value="Order"
+          class="btn btn-danger"
+        />
+      </div>
+    </div>
+  </div>
+</div>
