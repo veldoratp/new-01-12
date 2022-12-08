@@ -1,5 +1,7 @@
 let app = angular.module("myApp", ["ngRoute"]);
 
+localStorage.setItem("logInStatus", "false");
+
 app.config(function ($routeProvider) {
   $routeProvider
     .when("", { templateUrl: "home.html" })
@@ -32,11 +34,15 @@ app.run(function ($rootScope, $http) {
       $rootScope.listOfContest = response.data.contest;
       $rootScope.listOfSoldMonthly = response.data.soldMonthly;
     },
-    function (response) { }
+    function (response) {}
   );
 });
 
-app.controller("index", function ($scope) { });
+app.controller("index", function ($scope) {
+  $scope.hideHomePage = function () {
+    $scope.originalHome = { display: "none" };
+  };
+});
 
 app.controller("home", function ($scope) {
   $scope.addAlbumToCart = function (index) {
@@ -52,6 +58,10 @@ app.controller("home", function ($scope) {
 
 app.controller("product", function ($scope) {
   setYearStatus();
+
+  for (let i = 0; i < $scope.listOfProduct.length; i++) {
+    $scope.listOfProduct[i].index = i;
+  }
 
   function setYearStatus() {
     for (let i = 0; i < $scope.listOfProduct.length; i++) {
@@ -138,39 +148,63 @@ app.controller("cart", function ($scope) {
 
     cal();
   };
+
+  $scope.orderSuccess = function () {
+    if ($scope.listOfCart.length == 0) {
+      alert("Nothing in your cart!");
+    } else {
+      alert("Your successful order!!");
+    }
+    $scope.listOfCart = [];
+  };
 });
 
-app.controller("membership", function ($scope) { });
+app.controller("membership", function ($scope) {});
 
 app.controller("logInSignUpPage", function ($scope) {
   var checkLogIn = false;
-  
+
+  checkLogInFunction();
+
   $scope.SignUp = function () {
     localStorage.setItem("emailSignUp", $scope.emailSignUp);
     localStorage.setItem("username", $scope.username);
     localStorage.setItem("passSignUp", $scope.passSignUp);
     alert("Sign Up successfully!");
-  }
+    $scope.emailSignUp = "";
+    $scope.username = "";
+    $scope.passSignUp = "";
+  };
 
   $scope.LogIn = function () {
-    var checkEmail = localStorage.getItem("emailSignUp")
-    var checkPass = localStorage.getItem("passSignUp")
+    var checkEmail = localStorage.getItem("emailSignUp");
+    var checkPass = localStorage.getItem("passSignUp");
 
-    if($scope.email == checkEmail && $scope.pass == checkPass){
+    if ($scope.email == checkEmail && $scope.pass == checkPass) {
       checkLogIn = true;
-      
     }
     logInSuccessfully();
-    
-  }
+  };
 
   function logInSuccessfully() {
     if (checkLogIn == true) {
       alert("Log In successfully!");
-      $scope.form = { display: "none" }
+      localStorage.setItem("logInStatus", "true");
+    } else {
+      alert("Wrong Email or Password!");
     }
-    if(checkLogIn == false){
-      alert("ko thNH ONG!");
+    checkLogInFunction();
+  }
+  function checkLogInFunction() {
+    var logInStatuss = localStorage.getItem("logInStatus");
+
+    if (logInStatuss == "true") {
+      $scope.userName = localStorage.getItem("username");
+      $scope.welcome = { display: "flex" };
+      $scope.form = { display: "none" };
+    } else {
+      $scope.welcome = { display: "none" };
+      $scope.form = { display: "flex" };
     }
   }
 });
@@ -252,7 +286,7 @@ function revealOfContactUsPage() {
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var revealTop = reveals[i].getBoundingClientRect().top;
-    var revealPoint = 100;
+    var revealPoint = 50;
 
     if (revealTop < windowHeight - revealPoint) {
       reveals[i].classList.add("active");

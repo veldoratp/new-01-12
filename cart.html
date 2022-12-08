@@ -1,9 +1,10 @@
 <style>
-  h2,td{
-    font-family: 'Kaushan Script', cursive;
+  h2,
+  td,h1.shopping-cart {
+    font-family: "Kaushan Script", cursive;
   }
-  input{
-    font-family: 'Lobster', cursive;
+  input {
+    font-family: "Lobster", cursive;
   }
   td.PQTR {
     vertical-align: middle;
@@ -16,10 +17,14 @@
       rgb(155, 237, 255)
     );
   }
+  .icon-tabler-trash:hover,
+  .icon-tabler-trash::after {
+    color: red;
+  }
 </style>
 
 <div class="container-fluid cartContent" ng-controller="cart">
-  <h1 class="mx-5 pt-5">Shopping Cart</h1>
+  <h1 class="shopping-cart mx-5 pt-5">Shopping Cart</h1>
   <div class="listCart text-center py-2">
     <table class="table">
       <thead>
@@ -95,7 +100,7 @@
 
   <div class="orderFormInfor row">
     <div class="formInfor col-md-6" style="margin: 10px 0 20px 0">
-      <form action="" class="form" id="formInfor">
+      <form action="" class="form" id="formInfor" ng-submit="orderSuccess()">
         <h2 for="" class="">Your Information</h2>
         <input
           class="form-control p-2 my-2 mx-auto"

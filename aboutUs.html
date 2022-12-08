@@ -1,9 +1,11 @@
 <style>
-  h3.text-uppercase, h1{
-    font-family: 'Kaushan Script', cursive;
+  h3.text-uppercase,
+  h1.title {
+    font-family: "Kaushan Script", cursive;
   }
-  p,h3{
-    font-family: 'Lobster', cursive;
+  p.describe,
+  h3.title {
+    font-family: "Lobster", cursive;
   }
   .aboutUsContent {
     min-height: 60vh;
@@ -39,7 +41,7 @@
   .revealOfAboutUsPage.left-member {
     position: relative;
     opacity: 0;
-    transform: translateX(-200px);
+    transform: translateY(150px);
     transition: all 2s ease;
   }
   .revealOfAboutUsPage.left-member.active {
@@ -49,7 +51,7 @@
   .revealOfAboutUsPage.right-member {
     position: relative;
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateY(150px);
     transition: all 2s ease;
   }
   .revealOfAboutUsPage.right-member.active {
@@ -69,7 +71,7 @@
       </div>
       <div class="col-12 col-md-8">
         <h3 class="text-uppercase">Rhythm House</h3>
-        <p>
+        <p class="describe">
           Rhythm House was famously loved by musicians across many genres of
           music. From Classical music to Jazz, the music store had something on
           offer for every music lover. Eminent Classical artists like Pandit
@@ -96,8 +98,8 @@
         </div>
         <div class="Describe col-6 col-md-12">
           <div class="text-start text-md-center pt-3">
-            <h1>Leader</h1>
-            <h3>Nguyen Trinh Duy An</h3>
+            <h1 class="title">Leader</h1>
+            <h3 class="title">Nguyen Trinh Duy An</h3>
           </div>
         </div>
       </div>
@@ -111,8 +113,8 @@
         </div>
         <div class="Describe col-6 col-md-12">
           <div class="text-start text-md-center pt-3 pt-md-1">
-            <h1>Member</h1>
-            <h3>Pham Duy Khuong</h3>
+            <h1 class="title">Member</h1>
+            <h3 class="title">Pham Duy Khuong</h3>
           </div>
         </div>
       </div>

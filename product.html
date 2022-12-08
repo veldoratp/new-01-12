@@ -1,9 +1,15 @@
 <style>
-  h4.d-flex,button[type="button"],.right-content,h3,h5,p,input[type="button"]{
-    font-family: 'Kaushan Script', cursive;
+  h4.d-flex,
+  button[type="button"],
+  .right-content,
+  h3,
+  h5,
+  p.describe,
+  input[type="button"] {
+    font-family: "Kaushan Script", cursive;
   }
-  .describe{
-    font-family: 'Lobster', cursive;
+  .describe {
+    font-family: "Lobster", cursive;
   }
   .container {
     display: flex;
@@ -32,7 +38,7 @@
     align-items: flex-end;
     flex-direction: column;
   }
-  
+
   .searchs {
     display: flex;
     justify-content: flex-start;
@@ -43,16 +49,16 @@
   }
 
   .card-category {
-    box-shadow: 0px 2px 2px 1px  grey;
+    box-shadow: 0px 2px 2px 0px grey;
     align-items: center;
   }
 
   .card-types {
-    box-shadow: 0px 2px 2px 1px grey;
+    box-shadow: 0px 2px 2px 0px grey;
   }
 
   .card-year {
-    box-shadow: 0px 2px 2px 1px grey;
+    box-shadow: 0px 2px 2px 0px grey;
   }
   h2,
   h3,
@@ -60,10 +66,17 @@
   p {
     font-size: large;
   }
+  h5 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  h3 {
+    font-family: "Times New Roman", Times, serif;
+  }
+
   h4.pi {
     margin: 5px 0 10px 30px;
     color: rgb(44, 6, 81);
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
   }
   .Btn-close {
     font-size: 2.3vw;
@@ -144,10 +157,12 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 450;
     margin: 0 0 20px 0;
+    transition: 0.2s;
   }
   .Btn-addToCart:hover {
     box-shadow: 0 0 5px rgb(255, 0, 0);
     font-weight: 500;
+    transition: 0.2s;
   }
 </style>
 
@@ -165,11 +180,11 @@
             class="card-img-top img-fluid"
             data-bs-toggle="Modal"
             data-bs-target="#myModal"
-            ng-click="showModal($index)"
+            ng-click="showModal(eachProduct.index)"
           />
-          <h3>{{eachProduct.name}}</h3>
+          <h3>{{eachProduct.name}}{{$index}}</h3>
           <h5>{{eachProduct.category}} - {{eachProduct.type}}</h5>
-          <p>${{eachProduct.price}}</p>
+          <p class="describe">${{eachProduct.price}}</p>
           <input
             type="button"
             value="Add to Cart"
@@ -190,7 +205,6 @@
               ng-model="search"
               class="form-control"
             />
-            <br>
           </div>
         </div>
       </div>
@@ -226,8 +240,6 @@
             ng-model="radioCategory"
             ng-value="'solo performance'"
           />Solo performance<br />
-          <br>
-          <br>
         </div>
       </div>
 
@@ -309,9 +321,6 @@
             ng-model="radioYear"
             ng-value="'after2010'"
           />After 2010
-          <br>
-          <br>
-          <br>
         </div>
       </div>
     </div>
@@ -361,7 +370,7 @@
           />
         </div>
         <div class="describe col-md-7 col-12 px-0 px-3">
-          <p style="font-size: 1.8vw">
+          <p style="font-size: 1.8vw" class="describe">
             {{productModal[0].name}} <br />
             <b>
               {{productModal[0].category}} | {{productModal[0].type}} |

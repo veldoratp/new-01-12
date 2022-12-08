@@ -1,10 +1,13 @@
 <style>
-  .row,input[type="button"],button[type="button"],h4.modal-title{
-    font-family: 'Kaushan Script', cursive;
+  .row,
+  input[type="button"],
+  button[type="button"],
+  h4.modal-title {
+    font-family: "Kaushan Script", cursive;
   }
-    .describe{
-      font-family: 'Lobster', cursive;
-    }  
+  p.describe {
+    font-family: "Lobster", cursive;
+  }
   .liveshow2,
   .liveshow1,
   .album1,
@@ -20,7 +23,7 @@
     justify-content: center;
   }
   h1.title {
-    font-family: 'Kaushan Script', cursive;
+    font-family: "Kaushan Script", cursive;
     margin-bottom: 30px;
   }
 
@@ -64,8 +67,8 @@
   .revealOfHomePage.lsctsm {
     position: relative;
     opacity: 0;
-    transform: translateX(300px);
-    transition: all 1s ease-in;
+    transform: translateX(15px);
+    transition: all 0.4s ease-in;
   }
   .revealOfHomePage.lsctsm.active {
     opacity: 1;
@@ -74,8 +77,8 @@
   .revealOfHomePage.alca {
     position: relative;
     opacity: 0;
-    transform: translateX(-300px);
-    transition: all 1s ease-in;
+    transform: translateX(-40px);
+    transition: all 0.4s ease-in;
   }
   .revealOfHomePage.alca.active {
     opacity: 1;
@@ -445,7 +448,7 @@
             />
           </div>
           <div class="describe col-md-8 col-12">
-            <p>
+            <p class="describe">
               {{listOfAlbum[0].name}} <br />
               <b>
                 {{listOfAlbum[0].category}} | {{listOfAlbum[0].type}} |
@@ -494,7 +497,7 @@
             />
           </div>
           <div class="describe col-md-8 col-12">
-            <p>
+            <p class="describe">
               {{listOfAlbum[1].name}} <br />
               <b>
                 {{listOfAlbum[1].category}} | {{listOfAlbum[1].type}} |
@@ -543,7 +546,7 @@
             />
           </div>
           <div class="describe col-md-8 col-12">
-            <p>
+            <p class="describe">
               {{listOfCategory[0].name}} <br />
               <b>
                 {{listOfCategory[0].category}} | {{listOfCategory[0].type}} |
@@ -592,7 +595,7 @@
             />
           </div>
           <div class="describe col-md-8 col-12">
-            <p>
+            <p class="describe">
               {{listOfCategory[1].name}} <br />
               <b>
                 {{listOfCategory[1].category}} | {{listOfCategory[1].type}} |
@@ -641,7 +644,7 @@
             />
           </div>
           <div class="describe col-md-8 col-12">
-            <p>
+            <p class="describe">
               {{listOfLiveshow[0].name}} <br />
               <b>
                 {{listOfLiveshow[0].category}} | {{listOfLiveshow[0].type}} |
@@ -690,7 +693,7 @@
             />
           </div>
           <div class="describe col-md-8 col-12">
-            <p>
+            <p class="describe">
               {{listOfLiveshow[1].name}} <br />
               <b>
                 {{listOfLiveshow[1].category}} | {{listOfLiveshow[1].type}} |
@@ -739,7 +742,7 @@
             />
           </div>
           <div class="describe col-md-8 col-12">
-            <p>
+            <p class="describe">
               {{listOfContest[0].name}} <br />
               <b>
                 {{listOfContest[0].category}} | {{listOfContest[0].type}} |
@@ -788,7 +791,7 @@
             />
           </div>
           <div class="describe col-md-8 col-12">
-            <p>
+            <p class="describe">
               {{listOfContest[1].name}} <br />
               <b>
                 {{listOfContest[1].category}} | {{listOfContest[1].type}} |
@@ -837,7 +840,7 @@
             />
           </div>
           <div class="describe col-md-8 col-12">
-            <p>
+            <p class="describe">
               {{listOfSoldMonthly[0].name}} <br />
               <b>
                 {{listOfSoldMonthly[0].category}} |
@@ -886,8 +889,8 @@
               class="img-fluid"
             />
           </div>
-          <div class="describe col-md-8 col-12" >
-            <p>
+          <div class="describe col-md-8 col-12">
+            <p class="describe">
               {{listOfSoldMonthly[1].name}} <br />
               <b>
                 {{listOfSoldMonthly[1].category}} |
