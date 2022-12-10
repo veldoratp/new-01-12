@@ -109,6 +109,102 @@
     },
 
     {
+      "image": "image/theredshoes.jpg",
+      "name": " 'The red shoes' - IU",
+      "product-type": "Product",
+      "type": "CD",
+      "category": "solo performance",
+      "year": "2009",
+      "describe": "Debuting as a solo singer under the management of LOEN Ent, IU is a prominent name among many idols because of her outstanding singing ability. Perhaps not much need to be said about her wonderful voice 'the nation's sister' IU. She seems to be the 'guarantee' for successful music products and The red shoes this time is no exception. Immediately after their debut, The red shoes immediately dominated the charts. Not only that, this song also holds No.1 for many weeks in a simple way. Despite the suspicion of plagiarism, her comeback was also a great success when she won a series of weekly cups on prestigious Korean music stages.",
+      "price": 150.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/thebaddestfemale.jpg",
+      "name": " 'The baddest female' - CL",
+      "product-type": "Product",
+      "type": "DVD",
+      "category": "solo performance",
+      "year": "2013",
+      "describe": "In 2013, CL - the talented leader of 2NE1 had an impressive debut as a solo singer through the song 'The baddest female'. As the darling of YG Ent, CL was oriented to be a singer. solo artist from the very beginning because of his talent and extremely personal music style. But then, CL became the leader of 2NE1. It was not until 2013 that she officially stood alone on stage with The baddest female - a product penned by Kpop tycoon Teddy Park. 'Unboxing' on May 28, just 2 days later, The baddest female has topped almost all major online music charts in Korea. Notably, this song also entered the top 100 of iTune's Top Chat in 14 countries around the world. This song helped 2NE1's 'bad girl' beat senior Lee Hyo Ri to win No.1 consecutively.",
+      "price": 100.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/onewaylove.webp",
+      "name": " 'One way love' - Hyo Rin",
+      "product-type": "Product",
+      "type": "CD",
+      "category": "solo performance",
+      "year": "2013",
+      "describe": "Dubbed the Beyoncé of Korea, Hyo Rin's music products never disappoint fans. Debuting as the main vocal and also the leader of Sistar, Hyo Rin was noticed by her rare husky voice in Kpop. By the end of November 2013, Hyo Rin officially soloed with 2 songs with two songs. Completely opposite tunes are Lonely and One way love. If Lonely can show off Hyorin's flawless voice, One way love will make viewers satisfied with strong dance moves. Not only 'kill' the domestic online charts, One way love also reached No.1 on Kpop Billboard. On December 7, this song also helped Hyorin beat 2NE1's 'Missing You' and VIXX's Voodoo doll to win No.1 on Music Core. With hip hop music, R&B mixed with a bit of rhythmic tango, cleverly showing off. With strengths in vocals, Hyo Rin's One way love deserves to be the most impressive product of Kpop 2013.",
+      "price": 150.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/queen.jpg",
+      "name": " Queen",
+      "product-type": "Product",
+      "type": "Book",
+      "category": "band",
+      "year": "1970",
+      "describe": "Queen is the world's most rock-solid band ever that once rocked fans of the genre. Songs like We Will Rock You, We Are the Champions or Bohemian Rhapsody through Freddie Mercury's powerful voice made fans 'shiver' when listening. He is also a rock inspiration for generations to come, wherever he is.",
+      "price": 150.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/fleetwoodmac.jpg",
+      "name": " Fleetwood Mac ",
+      "product-type": "Product",
+      "type": "Magazine",
+      "category": "band",
+      "year": "1970",
+      "describe": "The 1970s was the time when Fleetwood Mac was most famous and received a lot of attention when it was joined by American lovers Lindsey Buckingham and Stevie Nicks. Rumors - the song released in 1977 - is considered a memorable milestone marking the group's resounding success and has topped the Billboard chart for 31 consecutive weeks.",
+      "price": 100.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/slyandthefamilystone.jpg",
+      "name": " Sly and the Family Stone ",
+      "product-type": "Product",
+      "type": "Book",
+      "category": "band",
+      "year": "2005",
+      "describe": "This is a multiracial and multi-gender group in the US that helps shape a different view of music by people of color. The group was quite successful when led by Sly Stone and together produced many songs that became phenomenal such as Dance to the Music, Everyday People.",
+      "price": 160.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/destinychild.jpg",
+      "name": " Destiny’s Child ",
+      "product-type": "Product",
+      "type": "Magazine",
+      "category": "band",
+      "year": "1990",
+      "describe": "Referring to the most successful girl groups of all time, it is impossible not to mention Destiny's Child, founded in 1990 in Texas. The three girls' hit series can include Say My Name, Survivor, Jumpin, Jumpin. Even after the disbandment, names like Beyoncé Knowles, Kelly Rowland and Michelle Williams are still extremely popular in their own activities.",
+      "price": 150.0,
+      "quantity": 1
+    },
+
+    {
+      "image": "image/bts.jpg",
+      "name": " BTS ",
+      "product-type": "Product",
+      "type": "Book",
+      "category": "band",
+      "year": "2013",
+      "describe": "This is a notable name in the top 10 this time of Esquire because BTS is a K-pop group and is also the only one on the list. According to Esquire, BTS is the pioneer group that helps K-pop reach the continent with top Billboard 100 hits like Dynamite and Life Goes On thanks to the perfect blend of pop, hip-hop, disco and R&B. BTS also has a large fan base around the world forming a strong ARMY fandom.",
+      "price": 200.0,
+      "quantity": 1
+    },
+
+    {
       "image": "image/cachnghidethanhcong.jpg",
       "name": " Cach Nghi De Thanh Cong ",
       "product-type": "Product",
